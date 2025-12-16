@@ -14,7 +14,7 @@ class OrganisasiSeeder extends Seeder
     public function run(): void
     {
         Organisasi::create([
-            'gambar_struktur_organisasi' => 'organisasi/fotoOrganisasi.png',
+            'gambar_struktur_organisasi' => 'fotoOrganisasi.png',
             'tahun' => '2025',
             'visi_misi' => '<h2 class="fw-bold mb-3">VISI & MISI</h2>
 <p>
