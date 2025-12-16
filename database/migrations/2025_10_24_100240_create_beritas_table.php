@@ -14,11 +14,10 @@ return new class extends Migration
        Schema::create('beritas', function (Blueprint $table) {
                 $table->bigIncrements('berita_id');
                 // FK ke kategoris.kategori_id (nullable, jika kategori dihapus → set null)
-                $table->foreign('kategori_id')
-                    ->references('kategori_id')
-                    ->on('kategoris')
-                    ->nullOnDelete();
-
+                $table->foreignId('kategori_id')
+                      ->nullable()
+                      ->constrained('kategoris')
+                      ->nullOnDelete();
                 $table->string('judul_berita', 255);
                 $table->string('gambar_berita', 255)->nullable();
                 $table->longText('isi_berita');
