@@ -15,8 +15,8 @@ return new class extends Migration
                 $table->bigIncrements('berita_id');
                 // FK ke kategoris.kategori_id (nullable, jika kategori dihapus → set null)
                 $table->foreignId('kategori_id')
-                      ->nullable()
-                      ->constrained('kategoris')
+                      ->nullable() 
+                      ->constrained('kategoris', 'kategori_id')
                       ->nullOnDelete();
                 $table->string('judul_berita', 255);
                 $table->string('gambar_berita', 255)->nullable();
