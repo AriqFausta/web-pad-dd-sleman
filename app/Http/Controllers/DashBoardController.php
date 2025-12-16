@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Galeri;
 use App\Models\Berita;
-use App\Models\Email;
+use App\Models\email;
 use App\Models\Admin_Logs;
 
 class DashBoardController extends Controller
