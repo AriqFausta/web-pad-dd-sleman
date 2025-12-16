@@ -199,7 +199,7 @@ footer {
     background-color: #233046;
     color: #fff;
     padding: 3rem 0 1rem;
-    background-image: url('../image/bg/motif footer.png'); /* opsional jika kamu ingin ada motif */
+    background-image: url('/image/bg/motif-footer.png'); /* opsional jika kamu ingin ada motif */
     background-size: cover;
 }
 
@@ -264,7 +264,7 @@ footer a:hover {
     padding: 10px;
     margin: 0;
 
-    background-image: url('../image/icon/Send.png');
+    background-image: url('/image/icon/Send.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20px;
