@@ -1,0 +1,448 @@
+/* custom background*/
+
+body, .container, .container-fluid, .row, .col {
+  background-color: transparent !important;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+}
+
+/* carousel custom */
+
+.carousel {
+    position: relative;
+}
+
+.carousel-img {
+    width : 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (min-width: 992px) {
+    .carousel-img {
+        height: 95vh;
+        aspect-ratio: auto;
+    }
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    bottom: auto;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, -50%);
+    padding: 30px 50px;
+    border-radius: 10px;
+    width: auto;
+    max-width: 80%;
+}
+
+.carousel-caption h1 {
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    line-height: 1.6;
+}
+
+/* button carousel yang di custom */
+
+.carousel-indicators [data-bs-target] {
+    width: 24px;
+    height: 24px;
+    border-radius: 2px;
+    background-color: #D9D9D9;
+    margin: 0 4px;
+    border: none;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: #414141;
+}
+.carousel-control-next-icon {
+    filter: invert(1);
+    width: 14px;
+    height: 14px;
+}
+.carousel-control-prev-icon {
+    filter: invert(1);
+    width: 14px;
+    height: 14px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 10;
+}
+
+.static-control {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mt-2-5 {
+    margin-top: 10px;
+}
+
+/* font custom */
+
+.card-text {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.card-header-2 {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+/* custom card */
+.card {
+    border: none;
+    overflow: hidden;
+    box-shadow: #414141 0px 0px 30px -15px;
+}
+.card img {
+    height: 256px;
+    width: 460px;
+    object-fit: cover;
+    object-position: 50% 20%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.card-body {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.card-custom-1 {
+    border-radius: 30px;
+    max-width: 460px;
+}
+
+.berita-card-image {
+    height: 344px;
+    width: 442px;
+    object-fit: cover;
+    object-position:30% 50%;
+}
+
+.berita-card-judul, .berita-card-isi {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* custom card gap*/
+.custom-gap {
+  --bs-gutter-x: 68px;
+  --bs-gutter-y: 68px;
+}
+
+.h1 {
+    color: #233046;
+}
+
+.img details {
+    aspect-ratio: 9/16;
+}
+
+.img-cover {
+    width : 384.49px;
+    height : 512.95px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* custom background color */
+.btn-blue-dark {
+    background-color: #233046;
+    color: #fff;
+}
+
+.btn-blue-dark:hover {
+    background-color: #ffc107;
+    color: #233046;
+}
+
+
+
+.bg-blue-dark {
+    background-color: #233046;
+}
+
+
+/* custom navbar */
+.nav-link.active {
+  font-weight: bold;
+  color: #FFD700 !important;
+}
+
+.navbar-logo {
+    height: 66px;
+    width: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* custom footer */
+footer {
+    background-color: #233046;
+    color: #fff;
+    padding: 3rem 0 1rem;
+    background-image: url('../image/bg/motif footer.png'); /* opsional jika kamu ingin ada motif */
+    background-size: cover;
+}
+
+footer h5 {
+    color: #ffd700;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffd700;
+}
+
+.social-icons i {
+    font-size: 1.8rem;
+    margin-right: 1rem;
+    height : 67px;
+    width : 67px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #364155;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.social-icons i:hover {
+    background-color: #ffd700;
+    color: #364155;
+}
+
+.subscribe {
+    background: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    width: 502px;
+}
+
+.subscribe input {
+    border: none;
+    border-radius: 30px 0 0 30px;
+    padding: 10px 15px;
+    width: 100%;
+    outline: none;
+    background: white;
+}
+
+.subscribe button {
+    width: 79px;
+    height: 79px;
+    border: none;
+    background-color: #ffd700;
+    border-radius: 0 30px 30px 30px;
+    padding: 10px;
+    margin: 0;
+
+    background-image: url('../image/icon/Send.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}
+
+@media (max-width: 390px) {
+    .subscribe {
+        width: 100%;
+    }
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 2rem;
+    padding-top: 1rem;
+    text-align: start;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* custom subscribe form */
+.search-bar {
+    max-width: 437px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: #414141 0px 0px 30px -15px;
+
+}
+
+.search-bar input {
+    border: none;
+    padding: 12px 15px;
+    border-radius: 15px;
+    outline: none;
+    box-shadow: none;
+}
+
+.search-bar .input-group-text {
+    background-color: white;
+    border: none;
+    padding-left: 15px;
+}
+
+.search-bar input::placeholder {
+    color: #233046;
+}
+
+.berita-container {
+    max-width: 600px;
+}
+
+/*custom searchbar berita*/
+.search-bar .form-control:focus {
+    border-color:#FFD700;
+}
+
+/*custom pagination button*/
+.pagination-btn {
+    min-width: 24px;
+    height: 24px;
+    padding: 8px 8px;
+    background: #545E6F;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.pagination-btn:hover {
+    background-color: #3e4653;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.pagination-btn.active {
+    background-color: #233046;
+    color: white;
+    font-weight: 600;
+}
+
+/* Custom styles untuk tombol prev/next */
+.static-control {
+    width: 24px;
+    height: 24px;
+    opacity: 1;
+}
+
+.static-control:hover {
+    background-color: #233046;
+}
+
+.static-control.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* custom login form */
+.login-form {
+    width: 825px;
+    height: 412px;
+    border-radius: 30px;
+    box-shadow: black 0px 0px 30px -15px;
+}
+
+.login-form .form-control {
+    height: 54px;
+    width: 627px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.login-form .form-control:focus {
+
+    box-shadow: 0 2px 4px black;
+}
+
+.login-form .form-control::placeholder {
+    transition: all 0.3s ease;
+}
+
+.login-form .form-control:focus::placeholder {
+    color: white;
+    font-style:italic;
+    transition: all 0.3s ease;
+}
+
+.login-form .btn-submit {
+    background: #ffc107;
+    height: 42px;
+    width: 123px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: black 0px 0px 15px -5px;
+    color: white;
+    font-weight: 600;
+    padding: 3px 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.login-form .btn-submit:hover {
+    background: #f4c12a;
+    transform: translateY(-1px);
+}
+
+.login-form .btn-submit:disabled {
+    cursor: not-allowed;
+}
+
+/* custom admin dashboard */
+.p-limit-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+/* custom edit konten form */
+.isi-konten-form .form-control {
+    background-color: #233046;
+    color: white;
+}
+
+.isi-konten-form .upload-button {
+    transform: translateY(-1px);
+    color: white;
+}
+
+.isi-konten-form .upload-button:hover {
+    background-color: #ffc107;
+    color: white;
+}
+
+

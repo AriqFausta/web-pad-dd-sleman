@@ -1,0 +1,34 @@
+ARIQ NOTES
+
+Color Hex Utama :
+biru tua : #233046
+kuning : #ffc107
+
+========================================================================================
+
+- Constraint image agar ketika di upload jadi ukurannya segitu segitu aja.
+card berita done :D
+page detail berita done
+card galleri done
+detail galleri done
+organisasi
+card organisasi
+
+- Backend yang belum :
+HomePage
+DetailGalerry
+Organisasi
+
+========================================================================================
+note pengerjaan
+
+yang baru dikerjakan 05/11/2025 :
+- penyambungan frontend ke backend (data lokal web compro sudah diubah dengan data di database)
+- carousel sudah mengambil dari data berita
+
+next :
+
+- constraint semua image
+- penyambungan panel admin
+- cek
+
