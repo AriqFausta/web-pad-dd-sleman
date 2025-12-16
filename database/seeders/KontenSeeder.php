@@ -21,17 +21,17 @@ class KontenSeeder extends Seeder
             ],
             [
                 'judul' => 'Promosi Pariwisata',
-                'icon' => 'icon/Icon Pariwisata.png',
+                'icon' => 'Icon Pariwisata.png',
                 'deskripsi' => 'Mempromosikan potensi pariwisata, seni, dan budaya di Yogyakarta kepada masyarakat luas.'
             ],
             [
                 'judul' => 'Teladan Generasi Muda',
-                'icon' => 'icon/Icon Teladan.png',
+                'icon' => 'Icon Teladan.png',
                 'deskripsi' => 'Menjadi teladan bagi generasi muda dengan nilai-nilai luhur seperti unggah-ungguh dan tepa selira.'
             ],
             [
                 'judul' => 'Jembatan Komunikasi',
-                'icon' => 'icon/Icon Komunikasi.png',
+                'icon' => 'Icon Komunikasi.png',
                 'deskripsi' => 'Berperan aktif sebagai jembatan komunikasi antara masyarakat, pemerintah, dan pelaku pariwisata.'
             ]
             ];
