@@ -25,8 +25,8 @@ class DatabaseSeeder extends Seeder
             AdminSeeder::class,
             KategoriSeeder::class,
             KontenSeeder::class,
-            OrganisasiCardSeeder::class,
             OrganisasiSeeder::class,
+            OrganisasiCardSeeder::class,
             
         ]);
 
