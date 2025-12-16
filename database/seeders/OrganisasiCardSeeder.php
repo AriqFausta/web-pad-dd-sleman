@@ -16,7 +16,7 @@ class OrganisasiCardSeeder extends Seeder
         for ($i = 1; $i <= 9; $i++) {
             Organisasi_Card::create([
                 'organisasi_id' => 1,
-                'foto' => 'organisasi/CardAnggota.png',
+                'foto' => 'CardAnggota.png',
                 'nama' => 'Denise Aditya',
                 'jabatan' => 'Jabatan ' . $i,
             ]);
