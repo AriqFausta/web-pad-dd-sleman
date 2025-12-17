@@ -85,6 +85,7 @@
 
 
 <div class="container my-5">
+    @if(count($galeriByYear) > 0)
     <div class="d-flex justify-content-center align-items-center gap-3 m-4">
         <button id="prev-year" class="btn p-0 border-0 bg-transparent">
             <i class="bi bi-chevron-left fs-4"></i>
@@ -97,7 +98,7 @@
         </button>
     </div>
     <div id="section-content">
-        @forelse($galeriByYear as $thn => $items)
+        @foreach($galeriByYear as $thn => $items)
             <div class="page {{ $thn == $tahunAktif ? '' : 'd-none' }}" id="page-{{ $thn }}">
                 <div class="container-fluid">
                     <div class="row m-0 g-5">
@@ -126,16 +127,18 @@
                                 </div>
                             </div>
                         </div>
-                        @empty
-                        <div class="text-center py-5">
-                            <h5 class="mb-3">Belum ada galeri</h5>
-                        </div>
-                        @endforelse
+                        @endforeach
                     </div>
                 </div>
             </div>
         @endforeach
     </div>
+    @else
+    <div class="text-center py-5">
+        <h1 class="fw-bold mb-3">Galeri Dimas Diajeng</h1>
+        <h5 class="text-muted">Belum ada galeri</h5>
+    </div>
+    @endif
 </div>
 
 
