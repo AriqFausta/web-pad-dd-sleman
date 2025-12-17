@@ -136,7 +136,7 @@
     @else
     <div class="text-center py-5">
         <h1 class="fw-bold mb-3">Galeri Dimas Diajeng</h1>
-        <h5 class="text-muted">Belum ada galeri</h5>
+        <h5 class="text-muted my-5">Belum ada galeri</h5>
     </div>
     @endif
 </div>
