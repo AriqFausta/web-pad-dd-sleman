@@ -21,7 +21,7 @@ class HomePageController extends Controller
             ->toArray();
 
 
-        $tahunAktif = $tahunTersedia[0] ?? date('Y');
+        $tahunAktif = $tahunTersedia[0] ?? null;
 
         $galeriByYear = Galeri::whereNotNull('tahun')
             ->orderBy('tahun', 'desc')

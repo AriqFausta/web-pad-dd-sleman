@@ -42,11 +42,11 @@
     <!-- Single header card containing both Header and Sub Header -->
     <div class="card text-white mb-3" style="border-radius:12px; background-color:#233046; min-height:84px;">
         <div class="row g-1 align-items-center p-3">
-            <div class="col-3 px-3">
+            <div class="col-3 px-3 limit-1">
                 <p class="mb-0 fs-6">{{ $konten->judul }}</p>
             </div>
         <div class="col px-3">
-            <p class="mb-0 text-white small p-limit-1">{{ $konten->deskripsi }}</p>
+            <p class="mb-0 text-white small limit-1">{{ $konten->deskripsi }}</p>
         </div>
             <div class="col-auto">
                 <button type="button" class="btn btn-warning btn-sm me-2" data-bs-toggle="modal" data-bs-target="#editModalHeader">
@@ -114,10 +114,10 @@
                 <img src="{{asset('image/icon/' . $item->icon)}}" alt="{{ 'icon ' . $item->judul }}" style="width:40px; height:40px;">
             </div>
             <div class="col-3 px-3">
-                <p class="mb-0 fs-6">{{ $item->judul }}</p>
+                <p class="mb-0 fs-6 limit-1">{{ $item->judul }}</p>
             </div>
             <div class="col px-3">
-                <p class="mb-0 text-white small">{{ $item->deskripsi }}</p>
+                <p class="mb-0 text-white small limit-1">{{ $item->deskripsi }}</p>
             </div>
             <div class="col-auto">
                 <button type="button" class="btn btn-warning btn-sm me-2" data-bs-toggle="modal" data-bs-target="#editModal{{ $loop->index }}">
