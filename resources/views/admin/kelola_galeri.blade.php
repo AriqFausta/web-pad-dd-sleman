@@ -204,7 +204,7 @@
     </div>
 
     <!-- Button Add (Fixed) -->
-    <div class="card mb-3 p-2 position-fixed bottom-0 me-5" style="border-radius:12px; background-color:#ffc107; width: 1183px; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#addModal">
+    <div class="card mb-3 p-2 position-fixed bottom-0 me-5 btn-tambah" data-bs-toggle="modal" data-bs-target="#addModal">
         <button class="btn" style="color: white">
             <i class="fa-solid fa-plus me-2"></i>Tambah Galeri
         </button>

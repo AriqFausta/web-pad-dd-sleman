@@ -97,7 +97,7 @@
         </button>
     </div>
     <div id="section-content">
-        @foreach($galeriByYear as $thn => $items)
+        @forelse($galeriByYear as $thn => $items)
             <div class="page {{ $thn == $tahunAktif ? '' : 'd-none' }}" id="page-{{ $thn }}">
                 <div class="container-fluid">
                     <div class="row m-0 g-5">
@@ -126,7 +126,11 @@
                                 </div>
                             </div>
                         </div>
-                        @endforeach
+                        @empty
+                        <div class="text-center py-5">
+                            <h5 class="mb-3">Belum ada galeri</h5>
+                        </div>
+                        @endforelse
                     </div>
                 </div>
             </div>
@@ -138,7 +142,7 @@
 <div class="container my-5">
     <h1 class="text-center fw-bold">Berita</h1>
     <div class="row m-0 g-5 mt-4">
-        @foreach ($beritaCards as $b)
+        @forelse ($beritaCards as $b)
         <div class="col-12 col-md-6 col-lg-4">
             <div class="container">
                 <img src="{{asset('image/berita/' . $b->gambar_berita)}}" alt="{{ $b->judul }}" class="img-fluid berita-card-image">
@@ -150,7 +154,11 @@
                 <a href="{{ route('Berita.show', $b->berita_id) }}" class="btn btn-blue-dark rounded px-2 py-1">Selengkapnya</a>
             </div>
         </div>
-        @endforeach
+        @empty
+        <div class="text-center py-5">
+            <h5 class="mb-3">Belum ada berita.</h5>
+        </div>
+        @endforelse
     </div>
 </div>
 

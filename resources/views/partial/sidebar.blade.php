@@ -1,5 +1,5 @@
     <div class="sidebar">
-        <h4><i class="fa-solid fa-user"></i> Admin</h4>
+        <h4 class="margin-back-responsif"><i class="fa-solid fa-user"></i> Admin</h4>
         <p class="sidebar-section-title">Main Menu</p>
 
         <a href="{{ route('admin.index') }}" class="{{ request()->is('admin/dashboard') ? 'active' : '' }}">

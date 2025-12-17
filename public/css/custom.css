@@ -270,7 +270,7 @@ footer a:hover {
     background-size: 20px;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 556px) {
     .subscribe {
         width: 100%;
     }
