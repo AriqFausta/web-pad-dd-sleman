@@ -113,7 +113,7 @@ class GaleriController extends Controller
         try {
             Admin_Logs::create([
                 'admin_id' => Auth::id(),
-                'action' => 'create_galeri'. $galeri->galeri_id . ' - ' . $galeri->nama,
+                'action' => 'create_galeri'. ' - ' . $galeri->nama,
             ]);
         } catch (\Exception $e) {}
 
@@ -165,7 +165,7 @@ class GaleriController extends Controller
         try {
             Admin_Logs::create([
                 'admin_id' => Auth::id(),
-                'action' => 'update_galeri'. $galeri->galeri_id . ' - ' . $galeri->nama,
+                'action' => 'update_galeri'. ' - ' . $galeri->nama,
             ]);
         } catch (\Exception $e) {}
 
@@ -185,7 +185,7 @@ class GaleriController extends Controller
         try {
             Admin_Logs::create([
                 'admin_id' => Auth::id(),
-                'action' => 'delete_galeri'. $galeri->galeri_id . ' - ' . $galeri->nama,
+                'action' => 'delete_galeri'. ' - ' . $galeri->nama,
             ]);
         } catch (\Exception $e) {}
 
