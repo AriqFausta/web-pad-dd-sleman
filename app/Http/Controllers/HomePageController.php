@@ -34,7 +34,6 @@ class HomePageController extends Controller
             ->get();
 
         $beritaCards = Berita::orderBy('created_at', 'desc')
-            ->skip(3)
             ->take(3)
             ->get();
 

@@ -156,6 +156,7 @@
                                         <i class="fa-solid fa-upload me-2"></i>Upload Gambar
                                     </label>
                                     <input type="file" name="gambar_berita" class="d-none" id="gambarInput{{ $berita->berita_id }}" accept="image/*">
+                                    <h4 class="text-align-center">Foto Max. 2.048kb</h4>
                                 </div>
                                 <div class="col-md-9">
                                     <div class="mb-3">
