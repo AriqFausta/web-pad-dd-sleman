@@ -10,7 +10,7 @@
          {{ $errors->first() }}
     </div>
     @endif
-    <div class="d-flex justify-content-center align-items-center min-vh-100">
+    <div class="d-flex justify-content-center align-items-center min-vh-100 login-width-admin">
         <div class="bg-blue-dark login-form py-3 px-5">
             <div class="align-items-center text-center">
                 <img src="{{asset('image/icon/Logo2.png')}}" alt="Logo Dimas Diajeng" class="navbar-logo">

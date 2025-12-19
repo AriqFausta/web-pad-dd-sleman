@@ -304,3 +304,9 @@
         right: 2px;
     }
 }
+
+@media (max-width: 813px) {
+    .card-width-admin {
+        width: 100%;
+    }
+}

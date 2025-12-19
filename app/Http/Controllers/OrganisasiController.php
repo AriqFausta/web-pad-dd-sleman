@@ -64,7 +64,7 @@ class OrganisasiController extends Controller
                     // Upload new image
                     $file = $request->file('gambar_struktur_organisasi');
                     $filename = time() . '_' . $file->getClientOriginalName();
-                    $file->move(public_path('image'), $filename);
+                    $file->move(public_path('image/organisasi/'), $filename);
                     $organisasi->gambar_struktur_organisasi = $filename;
                 }
 
@@ -123,7 +123,7 @@ class OrganisasiController extends Controller
                 if ($request->hasFile('foto')) {
                     $file = $request->file('foto');
                     $filename = time() . '_' . $file->getClientOriginalName();
-                    $file->move(public_path('image'), $filename);
+                    $file->move(public_path('image/organisasi/'), $filename);
                     $anggota->foto = $filename;
                 }
 
@@ -163,7 +163,7 @@ class OrganisasiController extends Controller
                     // Upload new image
                     $file = $request->file('foto');
                     $filename = time() . '_' . $file->getClientOriginalName();
-                    $file->move(public_path('image'), $filename);
+                    $file->move(public_path('image/organisasi/'), $filename);
                     $anggota->foto = $filename;
                 }
 
@@ -187,8 +187,8 @@ class OrganisasiController extends Controller
                 $anggota = Organisasi_Card::findOrFail($id);
 
                 // Delete image
-                if ($anggota->foto && file_exists(public_path('image/' . $anggota->foto))) {
-                    unlink(public_path('image/' . $anggota->foto));
+                if ($anggota->foto && file_exists(public_path('image/organisasi/' . $anggota->foto))) {
+                    unlink(public_path('image/organisasi/' . $anggota->foto));
                 }
 
                 $anggota->delete();
