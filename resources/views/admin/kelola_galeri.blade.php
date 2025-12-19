@@ -252,7 +252,7 @@
                                             <label class="form-label">Instagram Dimas</label>
                                             <div class="input-group">
                                                 <span class="input-group-text bg-blue-dark text-white border-0">@</span>
-                                                <input type="text" name="instagram_dim" class="form-control bg-blue-dark" value="" placeholder="username">
+                                                <input type="text" name="instagram_dim" class="form-control bg-blue-dark" value="" placeholder="username" required>
                                             </div>
                                         </div>
                                     </div>
@@ -261,7 +261,7 @@
                                             <label class="form-label">Instagram Diajeng</label>
                                             <div class="input-group">
                                                 <span class="input-group-text bg-blue-dark text-white border-0">@</span>
-                                                <input type="text" name="instagram_dia" class="form-control bg-blue-dark" placeholder="username">
+                                                <input type="text" name="instagram_dia" class="form-control bg-blue-dark" placeholder="username" required>
                                             </div>
                                         </div>
                                     </div>
