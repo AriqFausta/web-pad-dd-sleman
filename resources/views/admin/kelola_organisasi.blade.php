@@ -242,7 +242,7 @@
                 </div>
                 <form action="{{ route('admin.create_anggota') }}" method="POST" enctype="multipart/form-data" class="isi-konten-form">
                     @csrf
-                    <input type="hidden" name="organisasi_id" value="{{ $organisasis[0]->organisasi_id }}">
+                    <input type="hidden" name="organisasi_id" value="{{ $organisasis[0]->organisasi_id }}" required>
                     <div class="modal-body">
                         <div class="row gy-3">
                             <div class="col-12 text-center">
